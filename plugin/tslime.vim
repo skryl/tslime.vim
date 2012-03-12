@@ -43,7 +43,7 @@ function! Tmux_Pane_Numbers(A,L,P)
 endfunction
 
 " set tslime.vim variables
-function! s:Tmux_Vars()
+function! Tmux_Vars()
   let b:tmux_sessionname = input("session name: ", "", "custom,Tmux_Session_Names")
   let b:tmux_windowname = substitute(input("window name: ", "", "custom,Tmux_Window_Names"), ":.*$" , '', 'g')
   let b:tmux_panenumber = input("pane number: ", "", "custom,Tmux_Pane_Numbers")
